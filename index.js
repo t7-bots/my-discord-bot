@@ -1,8 +1,5 @@
-const { Client, GatewayIntentBits } = require('discord.js');
-const { joinVoiceChannel } = require('@discordjs/voice');
-
-const client = new Client({
-  intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent]
+const express = require('express');
+const app = express();
 });
 
 client.once('ready', () => {
@@ -42,5 +39,6 @@ if (message.content === '-ش') {
   message.reply('✅ دخلت الروم!');
 }
 });
+
 
 client.login('client.login(process.env.TOKEN');
